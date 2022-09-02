@@ -1,5 +1,5 @@
 #!/bin/bash
-# Nodetrade Masternode Setup Script V2.0.1 for Ubuntu 16.04 LTS
+# Nodetrade Masternode Setup Script V2.2.0 for Ubuntu 16.04 LTS
 #
 # Script will attempt to autodetect primary public IP address
 # and generate masternode private key unless specified in command line
@@ -47,7 +47,7 @@ function stop_daemon {
 genkey=$1
 clear
 
-echo -e "${GREEN} ------- Nodetrade MASTERNODE INSTALLER V2.0.1--------+
+echo -e "${GREEN} ------- Nodetrade MASTERNODE INSTALLER V2.2.0--------+
  |                                                  |
  |                                                  |::
  |        The installation will install and run     |::
@@ -130,8 +130,8 @@ fi
 #Installing Daemon
 cd ~
 rm -rf /usr/local/bin/nodetrade*
-wget https://github.com/IDCHAINGROUP/MNX/releases/download/v2.0.1/mnx-2.0.1-16.04-ubuntu-daemon.tar.gz
-tar -xzvf mnx-2.0.1-16.04-ubuntu-daemon.tar.gz
+wget https://github.com/IDCHAINGROUP/MNX/releases/download/v2.2.0/mnx-2.2.0-16.04-ubuntu-daemon.tar.gz
+tar -xzvf mnx-2.2.0-16.04-ubuntu-daemon.tar.gz
 sudo chmod -R 755 nodetrade-cli
 sudo chmod -R 755 nodetraded
 cp -p -r nodetraded /usr/local/bin
@@ -181,7 +181,7 @@ done
     nodetrade-cli stop
     sleep 5
 cd ~/.nodetrade && rm -rf blocks chainstate sporks
-cd ~/.nodetrade && wget https://github.com/IDCHAINGROUP/MNX/releases/download/v2.0.1/bootstrap.zip
+cd ~/.nodetrade && wget https://github.com/IDCHAINGROUP/MNX/releases/download/v2.2.0/bootstrap.zip
 cd ~/.nodetrade && unzip bootstrap.zip
 sudo rm -rf ~/.nodetrade/bootstrap.zip
 

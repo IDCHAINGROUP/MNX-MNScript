@@ -75,27 +75,27 @@ This guide will assist you in setting up a Nodetrade Masternode on a Linux Serve
 
 **Сongratulations you did it!**
 
-# Guide for Nodetrade v2.0.1 MasterNode Update:
-The instructions below are designed for users currently running an older version of Nodetrade v2.0.0 need update to v2.0.1
+# Guide for Nodetrade v2.2.0 MasterNode Update:
+The instructions below are designed for users currently running an older version of Nodetrade v2.0.1 need update to v2.2.0
 
 For **Ubuntu-16.04**
 ```
-wget -q https://raw.githubusercontent.com/IDCHAINGROUP/MNX-MNScript/main/mnx-v2.0.1-16.04-MN-Update.sh
+wget -q https://raw.githubusercontent.com/IDCHAINGROUP/MNX-MNScript/main/mnx-16.04-MN-Update.sh
 
-sudo chmod +x mnx-v2.0.1-16.04-MN-Update.sh
+sudo chmod +x mnx-16.04-MN-Update.sh
 
-./mnx-v2.0.1-16.04-MN-Update.sh
+./mnx-16.04-MN-Update.sh
 
 ```
 
 
 For **Ubuntu-18.04 & 20.04**
 ```
-wget -q https://raw.githubusercontent.com/IDCHAINGROUP/MNX-MNScript/main/mnx-v2.0.1-MN-Update.sh
+wget -q https://raw.githubusercontent.com/IDCHAINGROUP/MNX-MNScript/main/mnx-MN-Update.sh
 
-sudo chmod +x mnx-v2.0.1-MN-Update.sh
+sudo chmod +x mnx-MN-Update.sh
 
-./mnx-v2.0.1-MN-Update.sh
+./mnx-MN-Update.sh
 ```
 
 
