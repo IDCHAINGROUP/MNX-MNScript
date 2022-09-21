@@ -20,7 +20,7 @@ function stop_daemon {
 }
 
 
-echo "Your Nodetrade Masternode Will be Updated To The Latest Version v2.2.0 Now" 
+echo "Your Nodetrade Masternode Will be Updated To The Latest Version v3.0.0 Now" 
 sudo apt-get -y install unzip
 
 #remove crontab entry to prevent daemon from starting
@@ -30,10 +30,10 @@ crontab -l | grep -v 'mnxauto.sh' | crontab -
 stop_daemon
 
 rm -rf /usr/local/bin/nodetrade*
-mkdir MNX_2.2.0
-cd MNX_2.2.0
-wget https://github.com/IDCHAINGROUP/MNX/releases/download/v2.2.0/mnx-2.2.0-16.04-ubuntu-daemon.tar.gz
-tar -xzvf mnx-2.2.0-16.04-ubuntu-daemon.tar.gz
+mkdir MNX_3.0.0
+cd MNX_3.0.0
+wget https://github.com/IDCHAINGROUP/MNX/releases/download/v3.0.0/mnx-3.0.0-16.04-ubuntu-daemon.tar.gz
+tar -xzvf mnx-3.0.0-16.04-ubuntu-daemon.tar.gz
 mv nodetraded /usr/local/bin/nodetraded
 mv nodetrade-cli /usr/local/bin/nodetrade-cli
 chmod +x /usr/local/bin/nodetrade*
@@ -43,11 +43,11 @@ rm -rf ~/.nodetrade/sporks
 rm -rf ~/.nodetrade/evodb
 rm -rf ~/.nodetrade/peers.dat
 cd ~/.nodetrade/
-wget https://github.com/IDCHAINGROUP/MNX/releases/download/v2.2.0/bootstrap.zip
+wget https://github.com/IDCHAINGROUP/MNX/releases/download/v3.0.0/bootstrap.zip
 unzip bootstrap.zip
 
 cd ..
-rm -rf ~/.nodetrade/bootstrap.zip ~/MNX_2.2.0
+rm -rf ~/.nodetrade/bootstrap.zip ~/MNX_3.0.0
 
 sudo mkdir ~/.nodetrade-params
 cd ~/.nodetrade-params && wget https://github.com/IDCHAINGROUP/MNX/raw/main/params/sapling-output.params && wget https://github.com/IDCHAINGROUP/MNX/raw/main/params/sapling-spend.params	
