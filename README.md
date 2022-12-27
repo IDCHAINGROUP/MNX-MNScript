@@ -75,8 +75,8 @@ This guide will assist you in setting up a Nodetrade Masternode on a Linux Serve
 
 **Сongratulations you did it!**
 
-# Guide for Nodetrade v3.0.0 MasterNode Update:
-The instructions below are designed for users currently running an older version of Nodetrade v2.2.0 need update to v3.0.0
+# Guide for Nodetrade v3.1.0 MasterNode Update:
+The instructions below are designed for users currently running an older version of Nodetrade v3.0.0 need update to v3.1.0
 
 For **Ubuntu-16.04**
 ```
