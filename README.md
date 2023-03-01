@@ -80,6 +80,8 @@ The instructions below are designed for users currently running an older version
 
 For **Ubuntu-16.04**
 ```
+rm -rf mnx-16.04-MN-Update.sh
+
 wget -q https://raw.githubusercontent.com/IDCHAINGROUP/MNX-MNScript/main/mnx-16.04-MN-Update.sh
 
 sudo chmod +x mnx-16.04-MN-Update.sh
@@ -91,6 +93,8 @@ sudo chmod +x mnx-16.04-MN-Update.sh
 
 For **Ubuntu-18.04 & 20.04**
 ```
+rm -rf mnx-MN-Update.sh
+
 wget -q https://raw.githubusercontent.com/IDCHAINGROUP/MNX-MNScript/main/mnx-MN-Update.sh
 
 sudo chmod +x mnx-MN-Update.sh
